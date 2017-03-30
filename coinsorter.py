@@ -1,5 +1,7 @@
+# Get input from user
 userNum = input("Enter an amount of money in cents. ")
 
+# Cast into int
 userNum = int(userNum)
 
 
@@ -15,5 +17,6 @@ userNum = userNum - (n * 5)
 p = int(userNum/1)
 userNum = userNum - (p * 1)
 
+# Prints the amounts
 output = str(userNum) + " is {} quarters, {} dimes, {} nickels, and {} pennys.".format(q, d ,n ,p)
 print(output)
