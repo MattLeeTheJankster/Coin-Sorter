@@ -1,17 +1,19 @@
-userGuess = input("Enter an amount of money in cents. ")
+userNum = input("Enter an amount of money in cents. ")
 
-userGuess = int(userGuess)
+userNum = int(userNum)
 
 
-q = int(userGuess/25)
-userGuess = userGuess -(q * 25)
+q = int(userNum/25)
+userNum = userNum - (q * 25)
 
-d = int(userGuess/10)
-userGuess = userGuess - (d * 10)
+d = int(userNum/10)
+userNum = userNum - (d * 10)
 
-n = int(userGuess/5)
-userGuess = userGuess - (n * 5)
+n = int(userNum/5)
+userNum = userNum - (n * 5)
 
-p = int(userGuess/1)
-userGuess = userGuess - (p * 1)
+p = int(userNum/1)
+userNum = userNum - (p * 1)
 
+output = str(userNum) + " is {} quarters, {} dimes, {} nickels, and {} pennys.".format(q, d ,n ,p)
+print(output)
